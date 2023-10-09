@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>Conta Bancária</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div>
+              <img class="logo" src="images/logo.png" alt="Logo do banco">
+            </div>
+            <div>
+              <span class="navbar-brand">Banco Tenno</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Operação bancária</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="grafico.html">Estatísticas</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+        <!-- Fechamento do cabeçalho -->
+
+        <div class="row mt-5">
+            <!-- Coluna para o formulário -->
+            <div class="col-lg-6">
+                <article>
+                    <h1>Conta:</h1>
+                    <form class="form" action="" method="get">
+                        <label for="agencia">Agência:</label>
+                        <input type="text" class="agencia">
+                        <label for="numero">Número da conta:</label>
+                        <input type="text" class="numero">
+                        <label for="tipo">Tipo de Conta:</label>
+                        <select class="tipo">
+                            <option>Selecione</option>
+                            <option>Conta Poupança</option>
+                            <option>Conta Corrente</option>
+                            <option>Conta Universitária</option>                           
+                        </select>                  
+                        <label for="valorSaque">Sacar:</label>
+                        <input type="number" class="valorSaque">                     
+                        <label for="valorDeposito">Depositar:</label>
+                        <input type="number" class="valorDeposito">                        
+                        <button>Enviar</button>
+                    </form>
+                </article>
+            </div>
+
+            <!-- Coluna para o extrato -->
+            <div class="col-lg-6">
+                <aside>
+                    <h2>Extrato:</h2>
+                    <div class="resultado"></div>
+                    <script src="script.js"></script>
+                    <!-- Conteúdo do extrato aqui -->
+                </aside>
+            </div>
+        </div>
+        </div>
+    <<footer class="text-light text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; Banco Tenno - Grupo Heika 2023.</p>
+        </div>
+    </footer>>
+</body>
+</html>

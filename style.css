@@ -1,0 +1,89 @@
+header {
+  padding: 20px;
+  background-color: red!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.logo{
+  width: 100px;
+  height: auto;
+  margin-right: 5px;
+  margin-left: 50px;
+}
+.navbar-brand{
+  font-size: 24px;
+  color: white!important;
+  margin-left: 5px;
+}
+.navbar-toggler{
+  background-color: white!important;
+}
+.nav-item {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.nav-link-button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-link{
+  color: white!important;
+}
+
+.nav-link-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+footer {
+  position: fixed!important;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(92, 1, 1)!important;
+  color: rgb(92, 1, 1)!important;
+  display: flex;
+}
+article, aside {
+  margin-left: 10px!important;
+  margin-top: 60px; 
+  box-sizing: border-box; 
+}
+h1, h2{
+  margin-bottom: 30px;
+}
+.tipo{
+   margin-bottom: 10px;
+}
+label{
+   margin-bottom: 10px;
+   display: block;
+}
+input, select{
+   margin-bottom: 10px;
+   display: block;
+   width: 70%;
+   padding: 5px;
+}
+button{
+width: 100px;
+height: 40px;
+background-color: rgb(240, 0, 0);
+color: white !important;
+}
+button:hover, button{
+background-color: rgb(207, 0, 0);
+border-radius: 10px;
+}
+.grafico1{
+margin-top: 5px;
+}
+canvas{
+margin-top: 100px !important; 
+}

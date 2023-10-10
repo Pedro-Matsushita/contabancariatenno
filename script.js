@@ -1,7 +1,7 @@
+let historicoTransacoes = [];
 function contaBancaria() {
     const form = document.querySelector('.form');
     const resultado = document.querySelector('.resultado');
-    let historicoTransacoes = [];
 
     form.addEventListener('submit', function (evento) {
         evento.preventDefault();

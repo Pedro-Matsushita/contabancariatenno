@@ -1,7 +1,9 @@
-function atualizarGrafico(historicoTransacoes) {
-    const labels = transacoes.map(historicoTransacoes => transacao.numero);
-    const data = transacoes.map(historicoTransacoes => transacao.saldoAtual);
-  
+const historicoTransacoes = [];
+
+function atualizarGrafico(transacoes) {
+    const labels = transacoes.map(transacao => transacao.numero);
+    const data = transacoes.map(transacao => transacao.saldoAtual);
+
     const config = {
         type: 'line',
         data: {
@@ -27,9 +29,9 @@ function atualizarGrafico(historicoTransacoes) {
             }
         }
     };
-  
+
     const ctx = document.getElementById('myChart').getContext('2d');
     new Chart(ctx, config);
-  }
-  atualizarGrafico(transacoes);
-  
+}
+
+atualizarGrafico(historicoTransacoes);
